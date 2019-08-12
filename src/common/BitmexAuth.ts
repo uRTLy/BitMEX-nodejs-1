@@ -35,7 +35,8 @@ export function getAuthHeaders({
   return {
     "api-expires": nonce,
     "api-key": apiKeyID,
-    "api-signature": signature
+    "api-signature": signature,
+    "Content-Type": "application/json"
   };
 }
 
