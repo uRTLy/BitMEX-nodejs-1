@@ -12,10 +12,12 @@ export declare function getAuthHeaders({ apiKeyID, apiKeySecret, opts, method, p
     "api-expires"?: undefined;
     "api-key"?: undefined;
     "api-signature"?: undefined;
+    "Content-Type"?: undefined;
 } | {
     "api-expires": number;
     "api-key": string;
     "api-signature": string;
+    "Content-Type": string;
 };
 export declare function getWSAuthQuery(apiKeyID: string, apiKeySecret: string): string;
 export {};

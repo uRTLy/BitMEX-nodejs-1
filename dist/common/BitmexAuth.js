@@ -20,7 +20,8 @@ function getAuthHeaders({ apiKeyID, apiKeySecret, opts, method, path }) {
     return {
         "api-expires": nonce,
         "api-key": apiKeyID,
-        "api-signature": signature
+        "api-signature": signature,
+        "Content-Type": "application/json"
     };
 }
 exports.getAuthHeaders = getAuthHeaders;
